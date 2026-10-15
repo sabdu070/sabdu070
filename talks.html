@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Sami Aftab Abdul">
+<meta property="og:description" content="Biostatistician and epidemiologist working across health policy evaluation and clinical research.">
+<title>Talks | Sami Aftab Abdul</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Biostatistician and epidemiologist working across health policy evaluation and clinical research.">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>/* Layout: academic profile. Sticky top bar, profile column + About on the first screen,
+   then full-width bands with the section title on the left third and content on the right. */
+:root {
+  --bg: #ffffff;
+  --band: #f7f6f6;
+  --fg: #2a2a2e;
+  --muted: #6b6b73;
+  --rule: #e6e3e4;
+  --accent: #8a1538;
+  --accent-hover: #6b0f2b;
+  --accent-soft: #f6e9ed;
+  --on-accent: #ffffff;
+  --shadow: 0 1px 6px rgba(20, 10, 14, .08);
+  --f-head: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Roboto", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17171a; --band: #1e1e22; --fg: #e9e7e8; --muted: #a6a3a8; --rule: #302e33;
+    --accent: #e58aa5; --accent-hover: #f2aec2; --accent-soft: #3a2029; --on-accent: #17171a;
+    --shadow: 0 1px 6px rgba(0, 0, 0, .5); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17171a; --band: #1e1e22; --fg: #e9e7e8; --muted: #a6a3a8; --rule: #302e33;
+  --accent: #e58aa5; --accent-hover: #f2aec2; --accent-soft: #3a2029; --on-accent: #17171a;
+  --shadow: 0 1px 6px rgba(0, 0, 0, .5); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 16px; line-height: 1.65; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; text-underline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { text-wrap: balance; }
+p { margin: 0; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 70px; background: var(--bg); padding: .5rem .75rem; z-index: 30; }
+.muted { color: var(--muted); font-size: .9375rem; }
+svg { display: block; }
+
+.wrap {
+  max-width: 1140px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* top bar */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); box-shadow: var(--shadow); }
+.bar { display: flex; align-items: center; gap: 1.75rem; min-height: 64px; }
+.brand { font-family: var(--f-head); font-weight: 600; font-size: 1.15rem; color: var(--fg); white-space: nowrap; }
+.brand:hover { color: var(--fg); text-decoration: none; }
+.links { display: flex; gap: 1.35rem; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; }
+.links::-webkit-scrollbar { display: none; }
+.links a { color: var(--fg); font-size: .9375rem; white-space: nowrap; padding: .35rem 0; }
+.links a:hover, .links a.here { color: var(--accent); text-decoration: none; }
+.links a.here { font-weight: 500; }
+.theme { flex: none; width: 38px; height: 38px; display: grid; place-items: center; border: 0; background: transparent; color: var(--fg); cursor: pointer; border-radius: 50%; }
+.theme:hover { color: var(--accent); }
+.theme svg { width: 20px; height: 20px; fill: currentColor; }
+.i-sun { display: none !important; }
+:root[data-theme="dark"] .i-sun { display: block !important; }
+:root[data-theme="dark"] .i-moon { display: none !important; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .i-sun { display: block !important; }
+  :root:not([data-theme="light"]) .i-moon { display: none !important; }
+}
+
+/* hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 3.5rem; padding-block: 4.5rem 4rem; }
+.profile { text-align: center; display: grid; justify-items: center; align-content: start; gap: .35rem; }
+.avatar { position: relative; width: 240px; max-width: 100%; aspect-ratio: 1; border-radius: 50%; background: var(--accent-soft); display: grid; place-items: center; overflow: hidden; margin-bottom: 1.25rem; }
+.avatar span { font-family: var(--f-head); font-weight: 300; font-size: 4.5rem; color: var(--accent); letter-spacing: .02em; }
+.avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.profile h1 { font-family: var(--f-head); font-weight: 400; font-size: 2.15rem; line-height: 1.2; margin: 0; }
+.title { font-family: var(--f-head); font-weight: 300; font-size: 1.25rem; color: var(--muted); margin-bottom: .6rem; }
+.aff { font-family: var(--f-head); font-size: .95rem; line-height: 1.45; color: var(--fg); margin-top: .35rem; }
+.aff span { color: var(--accent); font-size: 1.05rem; }
+.social { list-style: none; display: flex; gap: .9rem; padding: 0; margin: 1.25rem 0 0; flex-wrap: wrap; justify-content: center; }
+.social.left { justify-content: flex-start; }
+.social a { color: var(--accent); display: block; }
+.social a:hover { color: var(--accent-hover); }
+.social svg { width: 34px; height: 34px; fill: currentColor; }
+.social .glyph { fill: var(--on-accent); font: 700 9.5px var(--f-body); letter-spacing: -.02em; }
+
+.display { font-family: var(--f-head); font-weight: 300; font-size: 2.75rem; line-height: 1.15; margin: 0 0 1rem; }
+.about { display: grid; gap: 1.1rem; align-content: start; font-size: 1.125rem; line-height: 1.75; }
+.about .display { margin-bottom: 0; font-size: 3.25rem; }
+.about p { max-width: 68ch; }
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-top: 1.25rem; font-size: 1rem; }
+.h-sm { font-family: var(--f-head); font-weight: 600; font-size: 1.5rem; margin: 0 0 .85rem; }
+.interests { margin: 0; padding-left: 1.25rem; display: grid; gap: .45rem; line-height: 1.5; }
+.interests li::marker { color: var(--accent); }
+.edu { list-style: none; margin: 0; padding: 0; display: grid; gap: .85rem; }
+.edu li { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: .6rem; align-items: start; }
+.ic { color: var(--accent); display: inline-block; }
+.ic svg { width: 24px; height: 24px; fill: currentColor; }
+.edu .ic { margin-top: 2px; }
+.edu-deg { line-height: 1.45; }
+.edu-inst { color: var(--muted); font-size: .9375rem; }
+
+/* section bands */
+.band { padding-block: 4.5rem; border-top: 1px solid var(--rule); }
+.band.alt { background: var(--band); }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 3.5rem; }
+.sec-title { align-self: start; position: sticky; top: 96px; display: grid; gap: .5rem; }
+.sec-title .display { margin: 0; }
+.split .h-sm { font-size: 1.15rem; margin: 2.5rem 0 .25rem; }
+.split .h-sm:first-child { margin-top: 0; }
+
+/* experience timeline */
+.timeline { list-style: none; margin: 0; padding: 0; position: relative; }
+.xp { display: grid; grid-template-columns: 8.75rem 28px minmax(0, 1fr); gap: 0 1rem; position: relative; padding-bottom: 2rem; }
+.xp:last-child { padding-bottom: 0; }
+.xp::before { content: ""; position: absolute; left: calc(8.75rem + 1rem + 13px); top: 10px; bottom: 0; width: 2px; background: var(--rule); }
+.xp:last-child::before { display: none; }
+.xp-date { font-size: .875rem; color: var(--muted); text-align: right; padding-top: .9rem; line-height: 1.35; font-variant-numeric: tabular-nums; }
+.xp-dot { width: 28px; height: 28px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); margin-top: .7rem; position: relative; z-index: 1; }
+.xp-dot::after { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: var(--accent); }
+.xp-card { background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; padding: 1.1rem 1.25rem; box-shadow: var(--shadow); min-width: 0; }
+.xp-card h3 { font-family: var(--f-head); font-weight: 600; font-size: 1.1rem; margin: 0; line-height: 1.35; }
+.sub-role { color: var(--muted); font-size: .9375rem; }
+.xp-org { color: var(--accent); font-weight: 500; margin-top: .25rem; line-height: 1.45; }
+.xp-loc { display: flex; align-items: center; gap: .3rem; color: var(--muted); font-size: .875rem; margin-top: .2rem; }
+.xp-loc svg { width: 14px; height: 14px; fill: currentColor; }
+.xp-detail { font-size: .9375rem; color: var(--muted); }
+.bul { margin: .65rem 0 0; padding-left: 1.15rem; display: grid; gap: .35rem; font-size: .9375rem; line-height: 1.55; }
+.bul li::marker { color: var(--accent); }
+
+/* toolbar */
+.toolbar { display: flex; flex-wrap: wrap; gap: .75rem 1rem; align-items: center; margin-bottom: 1.25rem; }
+.field input, .field select {
+  font: .9375rem var(--f-body); color: var(--fg); background: var(--bg); border: 1px solid var(--rule);
+  border-radius: 4px; padding: .55rem .75rem; min-height: 40px;
+}
+.field.grow { flex: 1 1 260px; }
+.field.grow input { width: 100%; }
+.field input:focus, .field select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.check { display: inline-flex; align-items: center; gap: .45rem; font-size: .9375rem; cursor: pointer; }
+.check input { accent-color: var(--accent); width: 16px; height: 16px; }
+
+/* publications */
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub, .talk { padding: 1.15rem 0; border-bottom: 1px solid var(--rule); display: grid; gap: .3rem; }
+.pub:first-child, .talk:first-child { padding-top: 0; }
+.pub-authors { font-size: .9375rem; line-height: 1.55; overflow-wrap: anywhere; }
+.me { font-weight: 700; color: var(--fg); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.yr { color: var(--muted); white-space: nowrap; }
+.pub-title { font-family: var(--f-head); font-weight: 500; font-size: 1.05rem; line-height: 1.45; }
+.pub-title a { color: var(--fg); }
+.pub-title a:hover { color: var(--accent); }
+.pub-venue { font-style: italic; color: var(--muted); font-size: .9375rem; overflow-wrap: anywhere; }
+.pub-foot { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin-top: .35rem; }
+.btn-o {
+  font: 500 .8125rem/1 var(--f-body); color: var(--accent); background: transparent; border: 1px solid var(--accent);
+  border-radius: 4px; padding: .38rem .7rem; cursor: pointer; text-decoration: none;
+}
+.btn-o:hover { background: var(--accent); color: var(--on-accent); text-decoration: none; }
+.tag { font-size: .78rem; color: var(--muted); background: var(--band); border: 1px solid var(--rule); border-radius: 4px; padding: .22rem .5rem; }
+.alt .tag { background: var(--bg); }
+.tag-acc { color: var(--accent); border-color: var(--accent-soft); background: var(--accent-soft); }
+.alt .tag-acc { background: var(--accent-soft); }
+.venues { margin: .2rem 0 0; padding-left: 1.15rem; font-size: .9rem; color: var(--muted); display: grid; gap: .2rem; line-height: 1.5; }
+.venues li::marker { color: var(--accent); }
+
+/* rows: awards, teaching, service, projects */
+.rows { list-style: none; margin: 0; padding: 0; }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .25rem 1.5rem; padding: .95rem 0; border-bottom: 1px solid var(--rule); }
+.row h3 { font-family: var(--f-head); font-weight: 500; font-size: 1rem; margin: 0 0 .1rem; line-height: 1.45; }
+.row-main { min-width: 0; font-size: .9375rem; line-height: 1.55; overflow-wrap: anywhere; }
+.row-main p { color: var(--muted); }
+.row-main p .me { color: var(--fg); }
+.row-date { font-size: .875rem; color: var(--muted); white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+.amt { color: var(--accent) !important; font-weight: 500; }
+.collapsed .row:nth-child(n+9) { display: none; }
+.more { margin-top: 1.25rem; padding: .6rem 1rem; }
+
+/* contact */
+.contact { display: grid; gap: .9rem; font-size: 1.05rem; }
+.c-line { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+#email-text { user-select: all; overflow-wrap: anywhere; }
+.contact .social { margin-top: .5rem; }
+
+.foot { border-top: 1px solid var(--rule); padding-block: 1.75rem; color: var(--muted); font-size: .875rem; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(24px + env(safe-area-inset-bottom, 0px)); background: var(--fg); color: var(--bg); padding: .6rem 1rem; border-radius: 4px; font-size: .9rem; z-index: 40; }
+
+@media (max-width: 900px) {
+  .hero, .split { grid-template-columns: minmax(0, 1fr); gap: 2.25rem; }
+  .hero { padding-block: 2.5rem 3rem; }
+  .sec-title { position: static; }
+  .about .display { font-size: 2.5rem; }
+  .display { font-size: 2.25rem; }
+  .band { padding-block: 3rem; }
+  .brand { display: none; }
+  .bar { gap: .75rem; }
+}
+@media (max-width: 600px) {
+  .cols { grid-template-columns: minmax(0, 1fr); }
+  .avatar { width: 180px; }
+  .about { font-size: 1.05rem; }
+  .xp { grid-template-columns: 22px minmax(0, 1fr); gap: .35rem .85rem; }
+  .xp::before { left: 10px; }
+  .xp-date { grid-column: 2; grid-row: 1; text-align: left; padding-top: 0; }
+  .xp-dot { grid-column: 1; grid-row: 1 / span 2; width: 22px; height: 22px; margin-top: 0; }
+  .xp-dot::after { inset: 5px; }
+  .xp-card { grid-column: 2; }
+  .row { grid-template-columns: minmax(0, 1fr); }
+  .row-date { text-align: left; grid-row: 1; }
+}
+
+/* multi-page additions */
+.loc { display: inline-flex; align-items: center; gap: .3rem; color: var(--muted); font-size: .95rem; margin-top: .25rem; }
+.loc svg { width: 16px; height: 16px; fill: currentColor; }
+.page-head { border-bottom: 1px solid var(--rule); background: var(--band); }
+.page-head .wrap { padding-block: 3.25rem 2.25rem; display: grid; gap: .5rem; }
+.page-head .display { margin: 0; }
+.page-body { padding-block: 2.5rem 4.5rem; }
+.page-body > * { max-width: 920px; }
+.page-body > .h-sm { font-size: 1.25rem; margin: 2.75rem 0 .35rem; }
+.page-body > .h-sm:first-child { margin-top: 0; }
+.page-body .pub:first-child, .page-body .talk:first-child { padding-top: 1.15rem; border-top: 1px solid var(--rule); }
+.links a.here { color: var(--accent); font-weight: 500; }
+.hero { padding-block: 4.5rem 5rem; }
+@media (max-width: 900px) {
+  .page-head .wrap { padding-block: 2.25rem 1.5rem; }
+  .page-body { padding-block: 1.75rem 3rem; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap bar">
+  <a class="brand" href="index.html">Sami Aftab Abdul</a>
+  <nav class="links" aria-label="Pages"><a href="index.html">About</a><a href="publications.html">Publications</a><a href="talks.html" class="here" aria-current="page">Talks</a><a href="awards.html">Awards</a><a href="teaching-service.html">Teaching &amp; Service</a><a href="projects.html">Projects</a></nav>
+  <button type="button" class="theme" id="theme-btn" aria-label="Switch between light and dark mode"><svg viewBox="0 0 24 24" aria-hidden="true" class="i-moon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-sun"><circle cx="12" cy="12" r="4.5"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></g></svg></button>
+</div></header>
+<main id="main"><div class="page-head"><div class="wrap"><h1 class="display">Talks &amp; posters</h1><p class="muted">29 works presented 57 times.</p></div></div>
+<div class="wrap page-body">
+  <div class="toolbar">
+    <label class="field" for="talk-type"><span class="sr">Presentation type</span>
+      <select id="talk-type"><option value="all">All (29)</option>
+      <option value="oral">Oral (6)</option><option value="poster">Poster (7)</option><option value="contrib">Contributed (16)</option></select></label>
+  </div>
+  <ol class="pubs" id="talk-list"><li class="talk" data-type="oral"><p class="pub-title">The short-term impacts of the decriminalization of illegal drug possession on clients dispensed opioid agonist treatment medications and visits to supervised consumption services and overdose prevention services in British Columbia, Canada (2015-2024).</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Sanchez M, Russell C, Elton-Marshall T, Ali F, Henderson I, Le Foll B, Kinniburgh B, Smith W, Rehm J, Imtiaz S.</p><ul class="venues"><li>Oral presentation at Canadian Association for Health Services and Policy Research (CAHSPR) – Health Policy Section. May 26, 2026, Ottawa, Ontario, Canada.</li><li>Oral presentation at Canadian Society for Epidemiology and Biostatistics (CSEB) – Time Series Section. June 17th, 2026, Virtual.</li></ul><div class="pub-foot"><span class="tag">Oral</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="oral"><p class="pub-title">The short-term impacts of the decriminalization of illegal drug possession on clients dispensed opioid agonist treatment medications and visits to supervised consumption services and overdose prevention services in British Columbia, Canada (2015-2023).</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Jiang H, Russell C, Elton-Marshall T, Ali F, Henderson I, Le Foll B, Kinniburgh B, Smith W, Rehm J, Imtiaz S.</p><ul class="venues"><li>Oral podium presentation at University of Ottawa’s School of Epidemiology and Public Health (SEPH) Research Day. Jan 24th, 2025. Ottawa. Ontario, Canada. · Award: 1st Place MSc Award ($250)</li><li>Oral podium presentation at The Ottawa Hospital Research Institute Methodological and Implementation research Program’s Trainee Committee Research Seminar Series. Apr 09th, 2025. Ottawa. Ontario, Canada.</li><li>Oral podium presentation at Canadian Association for Health Services and Policy Research (CAHSPR) – Health Policy and Healthcare Reform Section. May 26-29, 2025, Ottawa, Ontario, Canada.</li></ul><div class="pub-foot"><span class="tag">Oral</span><span class="tag">3 presentations</span></div></li><li class="talk" data-type="oral"><p class="pub-title">Pre-Operative Education Tools in Lung Cancer Surgery at a Single Centre (POET) Study.</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Lau R, Jones D, Villeneuve PJ, Gilbert S, Seely AJE, Sundaresan S, Maziak DE.</p><ul class="venues"><li>Oral Podium Presentation at Clinical Research Week 2023 – Celebrating Clinical Research at The Ottawa Hospital. October 16-20, 2023, Critical Care Wing 5225, Ottawa, Ontario, Canada</li></ul><div class="pub-foot"><span class="tag">Oral</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="oral"><p class="pub-title">Updating The Practice of Thoracic Surgery in Canada: A Survey of the Canadian Association of Thoracic Surgeons.</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Wright F, Finley C, Gilbert S, Seely AJE, Sundaresan S, Villeneuve PJ, Maziak DE.</p><ul class="venues"><li>Oral Podium presentation at Knowledge Translation Canada – School of Epidemiology and Public Health Summer Institute 2023, June 14-16, Desmarais Building, University of Ottawa, Ottawa, ON, Canada</li><li>Oral podium presentation at Interdisciplinary Student Research Conference on Healthcare (ISRCH), April 2nd, 2023, Roger Guindon, Ottawa, ON, Canada</li><li>Oral presentation at Ottawa Hospital Research Institute Summer Conference, June 29, 2022, Virtual.</li><li>Oral symposium presentation at 4th Annual Faculty of Medicine Research Day Conference, University of Ottawa, September 23, 2022, Ottawa, ON, Canada.</li></ul><div class="pub-foot"><span class="tag">Oral</span><span class="tag">4 presentations</span></div></li><li class="talk" data-type="oral"><p class="pub-title">Quality Assurance on the Use of Sequential Compression Devices in Thoracic Surgery?.</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Anstee C, Villeneuve PJ, Gilbert S, Seely AJE, Sundaresan S, Maziak DE.</p><ul class="venues"><li>Oral presentation at Western University Student Research Conference, April 02, 2022, Virtual</li><li>Podium presentation at Canadian Surgical Forum-Annual Meeting, September 21, 2021, Virtual</li></ul><div class="pub-foot"><span class="tag">Oral</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="oral"><p class="pub-title">Adverse Events and Length of Stay following Minimally Invasive Surgery in Paraesophageal Hernia Repair.</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Nguyen DL, Al Rawahi A, Anstee C, Delic E, Gilbert S, Villeneuve PJ, Maziak DE, Seely AJE.</p><ul class="venues"><li>Podium presentation at Connecting Young Minds Conference, September 18, 2021, Virtual, University of Ottawa, Ottawa, Ontario, Canada, 2nd Place Award Winner – Oral Presentations</li></ul><div class="pub-foot"><span class="tag">Oral</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="poster"><p class="pub-title">Assessing the Impact of Multicenter Positive Deviance Seminar on Length of Stay following Esophagectomy: An Interrupted Time Series Analysis.</p><p class="pub-authors">French D, <strong class="me">Abdul SA</strong>, Anstee C, Jones D, Taljaard M, Seely A.</p><ul class="venues"><li>Presentation at Canadian Society for Epidemiology and Biostatistics (CSEB), Montreal, Quebec, Canada, Aug 11-13, 2025.</li></ul><div class="pub-foot"><span class="tag">Poster</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="poster"><p class="pub-title">A Scoping Review of Patient-Reported Outcome Measures in Randomized Controlled Trials of Lung Cancer Surgery.</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Al-Baldawi Y, Shorr R, Gilbert S, Jones D, Seely A, Sundaresan S, Villeneuve PJ, Maziak DE.</p><ul class="venues"><li>Presentation at Canadian Society for Epidemiology and Biostatistics (CSEB), Montreal, Quebec, Canada, Aug 11-13, 2025.</li><li>Presentation at Canadian Surgery Forum (CSF), Montreal, Quebec, Canada, Sep 16-20, 2025.</li></ul><div class="pub-foot"><span class="tag">Poster</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="poster"><p class="pub-title">Patient-Reported Outcomes are Underutilized in Valvular Cardiac Surgery Randomized Controlled Trials: A scoping Review.</p><p class="pub-authors">Rahmouni K*, <strong class="me">Abdul SA*</strong>, Szabo ND*, Hryciw N*, Voisine P. *Co-presenters.</p><ul class="venues"><li>Presentation at 2024 Canadian Cardiovascular Congress (CCC), Vancouver, British Columbia, Canada. October 24-27, 2024.</li><li>Presentation at the International Annual Heart Valve Society Meeting 2025, Cairo, April 16-19, 2025.</li></ul><div class="pub-foot"><span class="tag">Poster</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="poster"><p class="pub-title">Updating The Practice of Thoracic Surgery in Canada: A Survey of the Canadian Association of Thoracic Surgeons.</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Wright F, Finley C, Gilbert S, Seely AJE, Sundaresan S, Villeneuve PJ, Maziak DE.</p><ul class="venues"><li>Knowledge Translation Canada – School of Epidemiology and Public Health Summer Institute 2023, June 14-16, Desmarais Building, University of Ottawa, Ottawa, ON, Canada</li><li>Canadian Surgical Forum - 24th Annual Meeting, September 15-18, 2022, Toronto, Ontario, Canada</li><li>Ottawa Patient Safety Conference (OPSC) - Annual Meeting, October 21, 2022, Ottawa, Ontario, Canada</li><li>Ottawa Hospital Research Institute’s Annual Research Day Conference, November 16, 2022, Ottawa, Ontario, Canada</li></ul><div class="pub-foot"><span class="tag">Poster</span><span class="tag">4 presentations</span></div></li><li class="talk" data-type="poster"><p class="pub-title">Are Sequential Compression Devices Routinely Necessary Following Enhanced Recovery After Thoracic Surgery?.</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Anstee C, Villeneuve PJ, Gilbert S, Seely AJE, Sundaresan S, Maziak DE.</p><ul class="venues"><li>102nd Annual meeting of the American Association of Thoracic Surgeons (AATS), Boston, MA, USA</li><li>International Thoracic Surgical Oncology Summit - American Association of Thoracic Surgeons (AATS), New York, NY, USA, May 14-15, 2022</li><li>Ottawa Hospital Research Institute Research Day, Virtual, Ottawa, Ontario, Canada, November 17, 2021</li><li>uOttawa Faculty of Medicine Research Day, September 24, 2021, Virtual, Ottawa, Ontario, Canada</li></ul><div class="pub-foot"><span class="tag">Poster</span><span class="tag">4 presentations</span></div></li><li class="talk" data-type="poster"><p class="pub-title">Adverse Events and Length of Stay following Minimally Invasive Surgery in Paraesophageal Hernia Repair.</p><p class="pub-authors"><strong class="me">Abdul SA*</strong>, Nguyen DL*, Al Rawahi A*, Anstee C, Delic E, Gilbert S, Villeneuve PJ, Maziak DE, Seely AJE. *Co-first authors.</p><ul class="venues"><li>Life Sciences Day 6.0: The Talent Ecosystem at Carleton University, May 25, 2023, Richcraft Hall, 2nd Floor, Ottawa, Ontario, Canada</li><li>Canadian Surgical Forum, September 21, 2021, Virtual, Ottawa, Ontario, Canada</li></ul><div class="pub-foot"><span class="tag">Poster</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="poster"><p class="pub-title">Effectiveness of 18F-FDG-PET/CT in the Stage Diagnosis of Non-small Cell Lung Cancer (NSCLC): A Diagnostic Test Accuracy - Systematic Review and Meta-Analysis.</p><p class="pub-authors"><strong class="me">Abdul SA</strong>, Khazoom F, Aw K, Lau R, Gilbert S, Jones D, Seely AJE, Sundaresan SR, Villeneuve PJ, Maziak DE.</p><ul class="venues"><li>Presentation at Canadian Surgical Forum (Canadian Association of Thoracic Surgeons – CATS Session) – 25th Annual Meeting, September 23, 2023, Vancouver, British Columbia, Canada.</li></ul><div class="pub-foot"><span class="tag">Poster</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Association of urine collection practices with urinary tract infection evaluation and management in febrile children aged 2–23 months.</p><p class="pub-authors">Cox G, Gravel J, Wills-Ibarra N, Barrowman N, Bijelic V, <strong class="me">Abdul SA</strong>, Cook R, Plint A, Bhatt M, Crombie T, Kinlin C.</p><ul class="venues"><li>Presentation at CAEP, June 7-9, 2026.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Hypothyroidism Following Iodinated Contrast Media in Infants.</p><p class="pub-authors">Gaerke A, Zuijdwijk C, Mitsakakis N, Tsampalieros A, <strong class="me">Abdul SA</strong>, Ahmet A.</p><ul class="venues"><li>Presentation at the 20th Annual Canadian Pediatric Endocrine Group (CPEG) Scientific Meeting, February 26–28, 2026 in Edmonton, Alberta.</li><li>Presidential Poster Presentation at the Pediatric Endocrine Society (PES) 2026 Annual Meeting, April 30-May 3 in San Francisco, CA.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Assessing the Impact of Multicenter Positive Deviance Seminar on Length of Stay following Esophagectomy: An Interrupted Time Series Analysis.</p><p class="pub-authors">French D, <strong class="me">Abdul SA</strong>, Anstee C, Jones D, Taljaard M, Seely A.</p><ul class="venues"><li>Oral Podium Presentation at Canadian Surgery Forum (CSF), Montreal, Quebec, Canada, Sep 16-20, 2025.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Assessing the Impact of Multicenter Positive Deviance Seminar on Length of Stay following Esophagectomy: An Interrupted Time Series Analysis.</p><p class="pub-authors">Jones D, <strong class="me">Abdul SA</strong>, French D, Anstee C, Safienddine N, Yeung C, Ferri L, Taljaard M, Seely A.</p><ul class="venues"><li>Lightning Oral Presentation at Canadian Surgery Forum (CSF), Montreal, Quebec, Canada, Sep 16-20, 2025.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">PROV-UTICalc: A PROspective Multicenter Validation of UTICalc for Children Aged 2 to 24 Months Presenting to the Emergency Department with Fever.</p><p class="pub-authors">Kinlin C, Gravel J, Barrowman N, Wills-Ibarra N, Shaikh N, Zemek R, Bijelic V, <strong class="me">Abdul SA</strong>, Cook R, Bhatt M.</p><ul class="venues"><li>Poster Presentation at Pediatric Academic Society (PAS) Conference, Honolulu, Hawaii, USA, 24-28 April 2025.</li><li>Oral Presentation at 30th European Emergency Medicine Conference (EUSEM), Copenhagen, 28 Sep - 1 Oct 2025.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Evaluating the effectiveness of a novel physician team triage model in reducing left without being seen rates at an academic tertiary care center emergency department.</p><p class="pub-authors">Zayed H, <strong class="me">Abdul SA</strong>, Taljaard M, Sun C, Gharz R, Yadav K.</p><ul class="venues"><li>Oral Presentation - 24th International Conference on Emergency Medicine (ICEM) 23-28 May 2025, Palais des congrès de Montréal, Montreal, Quebec, Canada</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">The impacts of decriminalization of illegal drugs on drug poisonings in British Columbia, Canada.</p><p class="pub-authors">Imtiaz S, <strong class="me">Abdul SA</strong>, Jiang H, Russell C, Elton-Marshall T, Ali F, Henderson I, Le Foll B, Kinniburgh B, Smith W, Rehm J.</p><ul class="venues"><li>Oral podium presentation at Canadian Association for Health Services and Policy Research (CAHSPR) – Health Policy and Healthcare Reform Section. May 26-29, 2025, Ottawa, Ontario, Canada.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Key aspects of implementing parallel-arm cluster randomized trials in low- and middle-income countries: a review of 300 published trials 2017-2022.</p><p class="pub-authors">Goldstein CE, Shaw J, <strong class="me">Abdul SA</strong>, Armond ACV, Mazzetti T, Lamprecht K, Marouf Y, Tran E, Hemming K, Weijer C, Taljaard M.</p><ul class="venues"><li>Oral Presentation at 8th World Conference on Research Integrity, Athens, Greece, 2-5 June, 2024.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Randomization procedures in parallel-arm cluster randomized trials in low- and middle-income countries: Review of 300 trials published 2017-2022.</p><p class="pub-authors">Shaw JF, Goldstein CE, <strong class="me">Abdul SA</strong>, Armond ACV, Mazzetti T, Lamprecht K, Marouf Y, Tran E, Weijer C, Hemming K, Taljaard M.</p><ul class="venues"><li>Presentation at Queen Mary University of London’s 9th Annual Meeting on Current Developments in Cluster Randomised Trials and Stepped Wedge Designs: Wednesday 8 and Thursday 9 November 2023</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">The Use of Indocyanine Green in Thoracic Duct Visualization and Evaluation of Gastric Conduit Perfusion during Esophagectomy.</p><p class="pub-authors">Aw K*, Al Rawahi A*, Lau R*, <strong class="me">Abdul SA*</strong>, Anstee C, Gilbert S, Moffatt-Bruce S, Seely AJE, Sundaresan SR, Villeneuve PJ, Maziak DE. *Co-presenters.</p><ul class="venues"><li>Oral presentation at Ottawa Hospital Research Institute Summer Conference, June 29, 2022, Virtual.</li><li>Poster Presentation at AATS International Thoracic Surgical Oncology Summit Sept 30-Oct 1, 2022, New York City, USA.</li><li>Oral symposium presentation at 4th Annual Faculty of Medicine Research Day Conference, University of Ottawa, September 23, 2022, Ottawa, Ontario, Canada.</li><li>Poster Presentation at Ottawa Hospital Research Institute’s Annual Research Day Conference, November 16, 2022, Ottawa, Ontario, Canada</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">4 presentations</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Comparing the Safety and Effectiveness of Different Surgical Approaches in Thymectomy: Subxiphoid VATs, Lateral Intercostal VATS, Open Median Sternotomy or Thoracotomy.</p><p class="pub-authors">Lau R*, Aw K*, <strong class="me">Abdul SA*</strong>, Anstee C, Gilbert S, Moffatt-Bruce S, Seely AJE, Sundaresan S, Villeneuve PJ, Maziak DE. *Co-presenters.</p><ul class="venues"><li>Oral presentation at Ottawa Hospital Research Institute Summer Conference, June 29, 2022, Virtual. Awarded Senior Student Dr. Goodman Cohen Award.</li><li>Poster Presentation at AATS International Thoracic Surgical Oncology Summit Sept 30-Oct 1, 2022, New York City, USA.</li><li>Oral symposium presentation at 4th Annual Faculty of Medicine Research Day Conference, University of Ottawa, September 23, 2022, Ottawa, Ontario, Canada.</li><li>Poster Presentation at Ottawa Hospital Research Institute’s Annual Research Day Conference, November 16, 2022, Ottawa, Ontario, Canada.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">4 presentations</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Update on Association with Surgical Technique and Recurrence After Laparoscopic Repair of Paraesophageal Hernia: A Single Center Experience.</p><p class="pub-authors">Al Rawahi A*, <strong class="me">Abdul SA*</strong>, et al. *Co-first authors.</p><ul class="venues"><li>Poster Presentation at Collins Surgical Day, May 8th, 2022, Virtual</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">The Effects of Uniportal VATS on Postoperative Outcomes and Quality of Life.</p><p class="pub-authors">Al Lawati Y, Lee A, <strong class="me">Abdul SA</strong>, Gilbert S.</p><ul class="venues"><li>Poster presentation at 58th Annual Meeting of the Society of Thoracic Surgeons, January 2022, virtual.</li><li>Podium presentation at Collins Surgical Day, May 14, 2021, Virtual.</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Association with surgical technique and recurrence after laparoscopic repair of paraesophageal hernia: a single center experience.</p><p class="pub-authors">Al Rawahi A*, <strong class="me">Abdul SA*</strong>, et al. *Co-first authors.</p><ul class="venues"><li>58th Annual Meeting of the Society of Thoracic Surgeons 2022, January 2022,</li><li>Poster Presentation at Canadian Surgical Forum, September 21, 2021, Virtual</li><li>Oral Presentation at Collins Surgical Day, May 14, 2021, Virtual</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">3 presentations</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Long-term symptom control comparison of Dor and Nissen fundoplication following laparoscopic paraesophageal hernia repair: A retrospective analysis.</p><p class="pub-authors">Nguyen DL*, <strong class="me">Abdul SA*</strong>, et al. *Co-first authors.</p><ul class="venues"><li>Poster Presentation at Canadian Surgical Forum, September 21, 2021, Virtual</li><li>Podium Presentation at Collins Surgical Day, May 14, 2021, Virtual</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">2 presentations</span></div></li><li class="talk" data-type="contrib"><p class="pub-title">Division-wide implementation of an Enhanced Recovery After Thoracic Surgery (ERATS) program — longitudinal impact on postoperative outcomes, processes of care, patient satisfaction and quality of life.</p><p class="pub-authors">Al Lawati Y, Mattice A, Seyednejad N, Leahy J, Mondor LA, Quinn K, Anstee C, Delic E, Fazekas A, Lee A, <strong class="me">Abdul SA</strong>, et al.</p><ul class="venues"><li>Oral presentation at Canadian Conference for the Advancement of Surgical Education, Virtual, October 29-30, 2020</li></ul><div class="pub-foot"><span class="tag">Contributed</span><span class="tag">1 presentation</span></div></li></ol>
+</div></main>
+<footer class="foot"><div class="wrap">© 2026 Sami Aftab Abdul · Last updated October 2026</div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script>(function () {
+  var root = document.documentElement;
+  var $ = function (id) { return document.getElementById(id); };
+  var toast = $('toast'), timer;
+  function say(msg) {
+    toast.textContent = msg; toast.hidden = false;
+    clearTimeout(timer); timer = setTimeout(function () { toast.hidden = true; }, 1800);
+  }
+
+  // theme toggle (remembered across pages)
+  $('theme-btn').addEventListener('click', function () {
+    var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = cur === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+
+  // optional photo: hide the img if photo.jpg is missing so the initials show
+  var img = $('photo');
+  if (img) {
+    if (img.complete && img.naturalWidth === 0) img.hidden = true;
+    img.addEventListener('error', function () { img.hidden = true; });
+  }
+
+  // citation copy
+  document.querySelectorAll('.cite').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var text = b.getAttribute('data-cite');
+      try { navigator.clipboard.writeText(text).then(function () { say('Citation copied'); }, function () { say('Copy is not available here'); }); }
+      catch (e) { say('Copy is not available here'); }
+    });
+  });
+
+  // publications page
+  var list = $('pub-list');
+  if (list) {
+    var pubs = Array.prototype.slice.call(list.querySelectorAll('.pub'));
+    var q = $('pub-search'), type = $('pub-type'), first = $('pub-first'), empty = $('pub-empty');
+    var apply = function () {
+      var s = q.value.trim().toLowerCase(), t = type.value, f = first.checked, n = 0;
+      pubs.forEach(function (li) {
+        var ok = (t === 'all' || li.dataset.type === t) && (!f || li.dataset.first === '1') && (!s || li.dataset.search.indexOf(s) !== -1);
+        li.hidden = !ok; if (ok) n++;
+      });
+      empty.hidden = n !== 0;
+    };
+    q.addEventListener('input', apply); type.addEventListener('change', apply); first.addEventListener('change', apply);
+  }
+
+  // talks page
+  var tt = $('talk-type');
+  if (tt) {
+    var talks = Array.prototype.slice.call(document.querySelectorAll('#talk-list .talk'));
+    tt.addEventListener('change', function () {
+      talks.forEach(function (li) { li.hidden = !(tt.value === 'all' || li.dataset.type === tt.value); });
+    });
+  }
+})();
+</script>
+</body>
+</html>

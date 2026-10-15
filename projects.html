@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Sami Aftab Abdul">
+<meta property="og:description" content="Biostatistician and epidemiologist working across health policy evaluation and clinical research.">
+<title>Projects | Sami Aftab Abdul</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Biostatistician and epidemiologist working across health policy evaluation and clinical research.">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<style>/* Layout: academic profile. Sticky top bar, profile column + About on the first screen,
+   then full-width bands with the section title on the left third and content on the right. */
+:root {
+  --bg: #ffffff;
+  --band: #f7f6f6;
+  --fg: #2a2a2e;
+  --muted: #6b6b73;
+  --rule: #e6e3e4;
+  --accent: #8a1538;
+  --accent-hover: #6b0f2b;
+  --accent-soft: #f6e9ed;
+  --on-accent: #ffffff;
+  --shadow: 0 1px 6px rgba(20, 10, 14, .08);
+  --f-head: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Roboto", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17171a; --band: #1e1e22; --fg: #e9e7e8; --muted: #a6a3a8; --rule: #302e33;
+    --accent: #e58aa5; --accent-hover: #f2aec2; --accent-soft: #3a2029; --on-accent: #17171a;
+    --shadow: 0 1px 6px rgba(0, 0, 0, .5); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17171a; --band: #1e1e22; --fg: #e9e7e8; --muted: #a6a3a8; --rule: #302e33;
+  --accent: #e58aa5; --accent-hover: #f2aec2; --accent-soft: #3a2029; --on-accent: #17171a;
+  --shadow: 0 1px 6px rgba(0, 0, 0, .5); color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 16px; line-height: 1.65; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; text-underline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+h1, h2, h3 { text-wrap: balance; }
+p { margin: 0; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 70px; background: var(--bg); padding: .5rem .75rem; z-index: 30; }
+.muted { color: var(--muted); font-size: .9375rem; }
+svg { display: block; }
+
+.wrap {
+  max-width: 1140px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* top bar */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bg); box-shadow: var(--shadow); }
+.bar { display: flex; align-items: center; gap: 1.75rem; min-height: 64px; }
+.brand { font-family: var(--f-head); font-weight: 600; font-size: 1.15rem; color: var(--fg); white-space: nowrap; }
+.brand:hover { color: var(--fg); text-decoration: none; }
+.links { display: flex; gap: 1.35rem; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; }
+.links::-webkit-scrollbar { display: none; }
+.links a { color: var(--fg); font-size: .9375rem; white-space: nowrap; padding: .35rem 0; }
+.links a:hover, .links a.here { color: var(--accent); text-decoration: none; }
+.links a.here { font-weight: 500; }
+.theme { flex: none; width: 38px; height: 38px; display: grid; place-items: center; border: 0; background: transparent; color: var(--fg); cursor: pointer; border-radius: 50%; }
+.theme:hover { color: var(--accent); }
+.theme svg { width: 20px; height: 20px; fill: currentColor; }
+.i-sun { display: none !important; }
+:root[data-theme="dark"] .i-sun { display: block !important; }
+:root[data-theme="dark"] .i-moon { display: none !important; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .i-sun { display: block !important; }
+  :root:not([data-theme="light"]) .i-moon { display: none !important; }
+}
+
+/* hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 3.5rem; padding-block: 4.5rem 4rem; }
+.profile { text-align: center; display: grid; justify-items: center; align-content: start; gap: .35rem; }
+.avatar { position: relative; width: 240px; max-width: 100%; aspect-ratio: 1; border-radius: 50%; background: var(--accent-soft); display: grid; place-items: center; overflow: hidden; margin-bottom: 1.25rem; }
+.avatar span { font-family: var(--f-head); font-weight: 300; font-size: 4.5rem; color: var(--accent); letter-spacing: .02em; }
+.avatar img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.profile h1 { font-family: var(--f-head); font-weight: 400; font-size: 2.15rem; line-height: 1.2; margin: 0; }
+.title { font-family: var(--f-head); font-weight: 300; font-size: 1.25rem; color: var(--muted); margin-bottom: .6rem; }
+.aff { font-family: var(--f-head); font-size: .95rem; line-height: 1.45; color: var(--fg); margin-top: .35rem; }
+.aff span { color: var(--accent); font-size: 1.05rem; }
+.social { list-style: none; display: flex; gap: .9rem; padding: 0; margin: 1.25rem 0 0; flex-wrap: wrap; justify-content: center; }
+.social.left { justify-content: flex-start; }
+.social a { color: var(--accent); display: block; }
+.social a:hover { color: var(--accent-hover); }
+.social svg { width: 34px; height: 34px; fill: currentColor; }
+.social .glyph { fill: var(--on-accent); font: 700 9.5px var(--f-body); letter-spacing: -.02em; }
+
+.display { font-family: var(--f-head); font-weight: 300; font-size: 2.75rem; line-height: 1.15; margin: 0 0 1rem; }
+.about { display: grid; gap: 1.1rem; align-content: start; font-size: 1.125rem; line-height: 1.75; }
+.about .display { margin-bottom: 0; font-size: 3.25rem; }
+.about p { max-width: 68ch; }
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-top: 1.25rem; font-size: 1rem; }
+.h-sm { font-family: var(--f-head); font-weight: 600; font-size: 1.5rem; margin: 0 0 .85rem; }
+.interests { margin: 0; padding-left: 1.25rem; display: grid; gap: .45rem; line-height: 1.5; }
+.interests li::marker { color: var(--accent); }
+.edu { list-style: none; margin: 0; padding: 0; display: grid; gap: .85rem; }
+.edu li { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: .6rem; align-items: start; }
+.ic { color: var(--accent); display: inline-block; }
+.ic svg { width: 24px; height: 24px; fill: currentColor; }
+.edu .ic { margin-top: 2px; }
+.edu-deg { line-height: 1.45; }
+.edu-inst { color: var(--muted); font-size: .9375rem; }
+
+/* section bands */
+.band { padding-block: 4.5rem; border-top: 1px solid var(--rule); }
+.band.alt { background: var(--band); }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 3.5rem; }
+.sec-title { align-self: start; position: sticky; top: 96px; display: grid; gap: .5rem; }
+.sec-title .display { margin: 0; }
+.split .h-sm { font-size: 1.15rem; margin: 2.5rem 0 .25rem; }
+.split .h-sm:first-child { margin-top: 0; }
+
+/* experience timeline */
+.timeline { list-style: none; margin: 0; padding: 0; position: relative; }
+.xp { display: grid; grid-template-columns: 8.75rem 28px minmax(0, 1fr); gap: 0 1rem; position: relative; padding-bottom: 2rem; }
+.xp:last-child { padding-bottom: 0; }
+.xp::before { content: ""; position: absolute; left: calc(8.75rem + 1rem + 13px); top: 10px; bottom: 0; width: 2px; background: var(--rule); }
+.xp:last-child::before { display: none; }
+.xp-date { font-size: .875rem; color: var(--muted); text-align: right; padding-top: .9rem; line-height: 1.35; font-variant-numeric: tabular-nums; }
+.xp-dot { width: 28px; height: 28px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); margin-top: .7rem; position: relative; z-index: 1; }
+.xp-dot::after { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: var(--accent); }
+.xp-card { background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; padding: 1.1rem 1.25rem; box-shadow: var(--shadow); min-width: 0; }
+.xp-card h3 { font-family: var(--f-head); font-weight: 600; font-size: 1.1rem; margin: 0; line-height: 1.35; }
+.sub-role { color: var(--muted); font-size: .9375rem; }
+.xp-org { color: var(--accent); font-weight: 500; margin-top: .25rem; line-height: 1.45; }
+.xp-loc { display: flex; align-items: center; gap: .3rem; color: var(--muted); font-size: .875rem; margin-top: .2rem; }
+.xp-loc svg { width: 14px; height: 14px; fill: currentColor; }
+.xp-detail { font-size: .9375rem; color: var(--muted); }
+.bul { margin: .65rem 0 0; padding-left: 1.15rem; display: grid; gap: .35rem; font-size: .9375rem; line-height: 1.55; }
+.bul li::marker { color: var(--accent); }
+
+/* toolbar */
+.toolbar { display: flex; flex-wrap: wrap; gap: .75rem 1rem; align-items: center; margin-bottom: 1.25rem; }
+.field input, .field select {
+  font: .9375rem var(--f-body); color: var(--fg); background: var(--bg); border: 1px solid var(--rule);
+  border-radius: 4px; padding: .55rem .75rem; min-height: 40px;
+}
+.field.grow { flex: 1 1 260px; }
+.field.grow input { width: 100%; }
+.field input:focus, .field select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.check { display: inline-flex; align-items: center; gap: .45rem; font-size: .9375rem; cursor: pointer; }
+.check input { accent-color: var(--accent); width: 16px; height: 16px; }
+
+/* publications */
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub, .talk { padding: 1.15rem 0; border-bottom: 1px solid var(--rule); display: grid; gap: .3rem; }
+.pub:first-child, .talk:first-child { padding-top: 0; }
+.pub-authors { font-size: .9375rem; line-height: 1.55; overflow-wrap: anywhere; }
+.me { font-weight: 700; color: var(--fg); text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.yr { color: var(--muted); white-space: nowrap; }
+.pub-title { font-family: var(--f-head); font-weight: 500; font-size: 1.05rem; line-height: 1.45; }
+.pub-title a { color: var(--fg); }
+.pub-title a:hover { color: var(--accent); }
+.pub-venue { font-style: italic; color: var(--muted); font-size: .9375rem; overflow-wrap: anywhere; }
+.pub-foot { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin-top: .35rem; }
+.btn-o {
+  font: 500 .8125rem/1 var(--f-body); color: var(--accent); background: transparent; border: 1px solid var(--accent);
+  border-radius: 4px; padding: .38rem .7rem; cursor: pointer; text-decoration: none;
+}
+.btn-o:hover { background: var(--accent); color: var(--on-accent); text-decoration: none; }
+.tag { font-size: .78rem; color: var(--muted); background: var(--band); border: 1px solid var(--rule); border-radius: 4px; padding: .22rem .5rem; }
+.alt .tag { background: var(--bg); }
+.tag-acc { color: var(--accent); border-color: var(--accent-soft); background: var(--accent-soft); }
+.alt .tag-acc { background: var(--accent-soft); }
+.venues { margin: .2rem 0 0; padding-left: 1.15rem; font-size: .9rem; color: var(--muted); display: grid; gap: .2rem; line-height: 1.5; }
+.venues li::marker { color: var(--accent); }
+
+/* rows: awards, teaching, service, projects */
+.rows { list-style: none; margin: 0; padding: 0; }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .25rem 1.5rem; padding: .95rem 0; border-bottom: 1px solid var(--rule); }
+.row h3 { font-family: var(--f-head); font-weight: 500; font-size: 1rem; margin: 0 0 .1rem; line-height: 1.45; }
+.row-main { min-width: 0; font-size: .9375rem; line-height: 1.55; overflow-wrap: anywhere; }
+.row-main p { color: var(--muted); }
+.row-main p .me { color: var(--fg); }
+.row-date { font-size: .875rem; color: var(--muted); white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+.amt { color: var(--accent) !important; font-weight: 500; }
+.collapsed .row:nth-child(n+9) { display: none; }
+.more { margin-top: 1.25rem; padding: .6rem 1rem; }
+
+/* contact */
+.contact { display: grid; gap: .9rem; font-size: 1.05rem; }
+.c-line { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+#email-text { user-select: all; overflow-wrap: anywhere; }
+.contact .social { margin-top: .5rem; }
+
+.foot { border-top: 1px solid var(--rule); padding-block: 1.75rem; color: var(--muted); font-size: .875rem; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(24px + env(safe-area-inset-bottom, 0px)); background: var(--fg); color: var(--bg); padding: .6rem 1rem; border-radius: 4px; font-size: .9rem; z-index: 40; }
+
+@media (max-width: 900px) {
+  .hero, .split { grid-template-columns: minmax(0, 1fr); gap: 2.25rem; }
+  .hero { padding-block: 2.5rem 3rem; }
+  .sec-title { position: static; }
+  .about .display { font-size: 2.5rem; }
+  .display { font-size: 2.25rem; }
+  .band { padding-block: 3rem; }
+  .brand { display: none; }
+  .bar { gap: .75rem; }
+}
+@media (max-width: 600px) {
+  .cols { grid-template-columns: minmax(0, 1fr); }
+  .avatar { width: 180px; }
+  .about { font-size: 1.05rem; }
+  .xp { grid-template-columns: 22px minmax(0, 1fr); gap: .35rem .85rem; }
+  .xp::before { left: 10px; }
+  .xp-date { grid-column: 2; grid-row: 1; text-align: left; padding-top: 0; }
+  .xp-dot { grid-column: 1; grid-row: 1 / span 2; width: 22px; height: 22px; margin-top: 0; }
+  .xp-dot::after { inset: 5px; }
+  .xp-card { grid-column: 2; }
+  .row { grid-template-columns: minmax(0, 1fr); }
+  .row-date { text-align: left; grid-row: 1; }
+}
+
+/* multi-page additions */
+.loc { display: inline-flex; align-items: center; gap: .3rem; color: var(--muted); font-size: .95rem; margin-top: .25rem; }
+.loc svg { width: 16px; height: 16px; fill: currentColor; }
+.page-head { border-bottom: 1px solid var(--rule); background: var(--band); }
+.page-head .wrap { padding-block: 3.25rem 2.25rem; display: grid; gap: .5rem; }
+.page-head .display { margin: 0; }
+.page-body { padding-block: 2.5rem 4.5rem; }
+.page-body > * { max-width: 920px; }
+.page-body > .h-sm { font-size: 1.25rem; margin: 2.75rem 0 .35rem; }
+.page-body > .h-sm:first-child { margin-top: 0; }
+.page-body .pub:first-child, .page-body .talk:first-child { padding-top: 1.15rem; border-top: 1px solid var(--rule); }
+.links a.here { color: var(--accent); font-weight: 500; }
+.hero { padding-block: 4.5rem 5rem; }
+@media (max-width: 900px) {
+  .page-head .wrap { padding-block: 2.25rem 1.5rem; }
+  .page-body { padding-block: 1.75rem 3rem; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap bar">
+  <a class="brand" href="index.html">Sami Aftab Abdul</a>
+  <nav class="links" aria-label="Pages"><a href="index.html">About</a><a href="publications.html">Publications</a><a href="talks.html">Talks</a><a href="awards.html">Awards</a><a href="teaching-service.html">Teaching &amp; Service</a><a href="projects.html" class="here" aria-current="page">Projects</a></nav>
+  <button type="button" class="theme" id="theme-btn" aria-label="Switch between light and dark mode"><svg viewBox="0 0 24 24" aria-hidden="true" class="i-moon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-sun"><circle cx="12" cy="12" r="4.5"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></g></svg></button>
+</div></header>
+<main id="main"><div class="page-head"><div class="wrap"><h1 class="display">Research projects</h1><p class="muted">41 projects since 2019.</p></div></div><div class="wrap page-body"><ol class="rows"><li class="row"><div class="row-main"><h3>A survey of HPV vaccination status among Canadian oncology patients</h3><p>Principal Investigator: Rachel Howard MD, Lesleigh Abbott MD</p><p>CRU Members: Anne Tsampalieros PhD, <strong class="me">Sami Aftab Abdul MSc</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Jul 2026 – Present</div></li><li class="row"><div class="row-main"><h3>Penner-Catalyst for Change: A Comprehensive Evaluation of the Extensive Needs Service Pilot Program in Ontario (ENS) – Automated Report</h3><p>Principal Investigator: Alexandra Ahmet MD</p><p>CRU Members: Nicholas Mitsakakis PhD, Lamia Hayawi MPH MSc MBBS, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Apr 2026 – Present</div></li><li class="row"><div class="row-main"><h3>Analgesia for lumbar puncture in children: a network meta-analysis</h3><p>Principal Investigator: Naveen Poonai MSc MD</p><p>CRU Members: Stephen Kutcher PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Apr 2026 – Present</div></li><li class="row"><div class="row-main"><h3>New landscape in congenital adrenal hyperplasia (CAH) newborn screening – Specificity of 21-deoxycortisol as a new second-tier test for 21-hydroxylase deficiency CAH screening in Ontario, Canada</h3><p>Principal Investigator: Alexandra Ahmet MD</p><p>CRU Members: Nicholas Mitsakakis PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Jan 2026 – Jul 2026</div></li><li class="row"><div class="row-main"><h3>Addressing Child and Family Social Determinants of Health Needs with Social Navigation: Navigating Social Resources for Children’s Health “NSRCH” Clinic a Non-Inferiority Randomized Controlled Trial</h3><p>Principal Investigator: Caroline Zuijdwijk MD</p><p>CRU Members: Nicholas Mitsakakis PhD, Anne Tsampalieros PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Jan 2026 – Present</div></li><li class="row"><div class="row-main"><h3>Preprocedural fasting and adverse events: A systematic review and meta-analysis and a Two-Stage Individual Patient Data Meta-Analysis</h3><p>Principal Investigator: Maala Bhatt, MD MSc</p><p>CRU Members: Nick Barrowman PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Nov 2025 – Present</div></li><li class="row"><div class="row-main"><h3>Study on Neonatal Hypothyroidism Post-Iodinated Contrast Media</h3><p>Principal Investigator: Alexandra Ahmet MD</p><p>CRU Members: Anne Tsampalieros PhD MD, Nicholas Mitsakakis PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Oct 2025 – Jul 2026</div></li><li class="row"><div class="row-main"><h3>Impact of Urine Collection Practices on Contamination, Repeat Testing, and Antibiotic Use in Febrile Young Children: A Comparative Study Between Two Pediatric Emergency Departments</h3><p>Principal Investigator: Ceilidh Kinlin MD</p><p>CRU Members: Nick Barrowman PhD, Vid Bijelic MSc, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Aug 2025 – May 2026</div></li><li class="row"><div class="row-main"><h3>Measurement of age dependent Z scores for cerebellar tonsil position and tonsillar ADC</h3><p>Principal Investigator: Nishard Abdeen MD</p><p>CRU Members: Nicholas Mitsakakis PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Mar 2025</div></li><li class="row"><div class="row-main"><h3>Climate change and mental health outcome indicators: a scoping review</h3><p>Principal Investigator: Richard Webster PhD, Denise Thomson PhD</p><p>CRU Members: <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit, Cochrane Planetary Health</p></div><div class="row-date">Feb 2025 – Oct 2025</div></li><li class="row"><div class="row-main"><h3>Ultrasound of cervical lymph nodes in children: Developing guidelines for appropriate referral</h3><p>Principal Investigator: Nishard Abdeen MD</p><p>CRU Members: Nicholas Mitsakakis PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Feb 2025 – Mar 2025</div></li><li class="row"><div class="row-main"><h3>Retrospective Assessment of Bisphosphonate Therapy Efficacy and Safety in Pediatric Complex Regional Pain Syndrome: A Review of Effectiveness and Side Effects</h3><p>Principal Investigator: Christine Lamontagne MD</p><p>CRU Members: Vid Bijelic MSc, Nick Barrowman PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Jan 2025 – May 2026</div></li><li class="row"><div class="row-main"><h3>Systematic review of cluster randomized trials evaluating clinical prediction rules focusing on methodological and ethical issues in such trials</h3><p>Principal Investigator: Monica Taljaard PhD</p><p class="muted">Ottawa Hospital Research Institute</p></div><div class="row-date">Nov 2024 – Apr 2025</div></li><li class="row"><div class="row-main"><h3>Evaluating the effectiveness of a novel physician team triage model in reducing left without being seen rates at an academic tertiary care center emergency department.</h3><p>Principal Investigators: Haroun Zayed MD, Krishan Yadav MD,</p><p>Statistician: <strong class="me">Sami Aftab Abdul</strong>, Monica Taljaard PhD</p><p class="muted">Ottawa Hospital Research Institute</p></div><div class="row-date">Nov 2024 – Jul 2025</div></li><li class="row"><div class="row-main"><h3>Prospective Immunomodulator Therapy with Adjuvant Resistant Starch Therapy Placebo-Controlled Trial in Children with Moderate or Severe Crohn’s Disease.</h3><p>Principal Investigator: David R. Mack MD</p><p>CRU Members: Stephen Kutcher PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Aug 2024 – Sep 2024</div></li><li class="row"><div class="row-main"><h3>Decriminalization of Possession of Illicit Drugs in British Columbia: Quantitative Analyses of Health Data and Criminal Justice Data</h3><p>Principal Investigators: Jürgen Rehm PhD, Sameer Imtiaz PhD</p><p class="muted">Centre for Addiction and Mental Health (CAMH)</p></div><div class="row-date">Jul 2024 – Jul 2025</div></li><li class="row"><div class="row-main"><h3>Use of patient-reported outcome measures in lung cancer surgery randomized controlled trials: a scoping review</h3><p>Principal Investigators: <strong class="me">Sami Aftab Abdul</strong>, Dr. Donna E. Maziak</p><p class="muted">University of Ottawa, The Ottawa Hospital</p></div><div class="row-date">Jul 2024 – Aug 2024</div></li><li class="row"><div class="row-main"><h3>Pediatric Quality of Life Post Tracheoesophageal Fistula Repair: A Systematic Review and Meta-Analysis</h3><p>Principal Investigator: Ahmed Nasr MD</p><p>CRU Members: Vid Bijelic MSc, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Mar 2024 – Oct 2024</div></li><li class="row"><div class="row-main"><h3>A Prospective Validation of UTICalc for Children Aged 2 to 24 Months Presenting to the Emergency Department with Fever</h3><p>Principal Investigators: Ceilidh Kinlin MD, Maala Bhatt MD MSc</p><p>CRU Members: Vid Bijelic MSc, Nick Barrowman PhD, <strong class="me">Sami Aftab Abdul</strong></p><p class="muted">CHEO Research Institute – Clinical Research Unit</p></div><div class="row-date">Feb 2024 – Jul 2025</div></li><li class="row"><div class="row-main"><h3>Use of patient-reported outcome measures in valvular cardiac surgery randomized clinical trials: a scoping review</h3><p>Principal Investigators: <strong class="me">Sami Aftab Abdul</strong>, Kenza Rahmouni MD</p><p class="muted">University of Ottawa, Heart Institute, The Ottawa Hospital</p></div><div class="row-date">Jan 2024 – Apr 2024</div></li><li class="row"><div class="row-main"><h3>The Elimination of Standardized PREoperative testing for Same-day Surgery:</h3><p>Collaborators: Monica Taljaard PhD, Jeremy Grimshaw PhD</p><p>Principal Investigators: Kyle Kirkham MD (UHN, TWH)</p><p class="muted">The ESPRESS study · University Health Network, Toronto Western Hospital, The Ottawa Hospital</p></div><div class="row-date">Nov 2023 – Jun 2024</div></li><li class="row"><div class="row-main"><h3>Evidence for Underprescription of and Non-Adherence to Guideline Recommended Cardiovascular Medications in Adults with Peripheral Artery Disease: Protocol for a Systematic Review and Meta-Analysis</h3><p>Collaborators: Derek Roberts MD PhD, Jeremy Grimshaw PhD, Ian D. Graham PhD</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Oct 2023 – Jul 2024</div></li><li class="row"><div class="row-main"><h3>Evidence for overuse of cardiovascular healthcare services in high-income countries: A systematic review and meta-analysis</h3><p>Principal Investigator: Derek Roberts MD PhD</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Aug 2023 – Jul 2025</div></li><li class="row"><div class="row-main"><h3>Predictors of Clinical Outcomes in Adults with Chronic Limb-Threatening Ischemia: Protocol for A Systematic Review and Meta-Analysis of Prognostic Studies</h3><p>Principal Investigator: Derek Roberts MD PhD</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Jun 2023 – Aug 2024</div></li><li class="row"><div class="row-main"><h3>Literature-Derived, Population-Based, Pooled Estimates of Clinical Outcomes in Adult Patients with Chronic Limb-Threatening Ischemia: Protocol for A Systematic Review and Meta-Analysis</h3><p>Principal Investigator: Derek Roberts MD PhD</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Jun 2023 – Aug 2024</div></li><li class="row"><div class="row-main"><h3>Evaluating and Improving a National Learning Network - Canadian Association of Thoracic Surgeons – CIHR Project Grant ($619,650) – An Interrupted Time Series Analysis</h3><p>Principal Investigators: Seely, Andrew J; Brehaut, Jamie C; Taljaard, Monica</p><p>Collaborators: Ferri, Lorenzo; Finley, Christian J; Kidane, Biniam; Moffatt-Bruce, Susan D; Presseau, Justin; Ramsay, Timothy O; Thavorn, Kednapa; Villeneuve, Patrick J</p><p>Supervisor: Dr. Andrew Seely, Dr. Monica Taljaard</p><p class="muted">The Ottawa Hospital, Hamilton General Hospital Campus</p></div><div class="row-date">Jun 2023 – Jul 2025</div></li><li class="row"><div class="row-main"><h3>Colchicine For The Prevention Of Perioperative Atrial Fibrillation In Patients Undergoing Thoracic Surgery (COP-AF) - Multi-centre, blinded, randomized controlled trial</h3><p>Supervisor: Donna E. Maziak MD MSc</p><p>Principal Investigator: David Cohen MD</p><p class="muted">The Ottawa Hospital, Hamilton General Hospital Campus</p></div><div class="row-date">Jun 2023 – Aug 2023</div></li><li class="row"><div class="row-main"><h3>Systematic Review and Meta-Analysis of Cluster RCTs in LMIC</h3><p>Supervisor: Monica Taljaard PhD</p><p class="muted">The Ottawa Hospital, University of Ottawa, University of Western Ontario</p></div><div class="row-date">Jun 2023 – Dec 2023</div></li><li class="row"><div class="row-main"><h3>Systematic Review and Meta-Analysis of ICU RCT Consent Process</h3><p>Supervisor: Monica Taljaard PhD</p><p class="muted">The Ottawa Hospital, University of Ottawa, University of Western Ontario</p></div><div class="row-date">May 2023 – Dec 2023</div></li><li class="row"><div class="row-main"><h3>The Canadian COVID-19 Prospective Cohort Study (CANCOV Study)</h3><p>Supervisor: Juthaporn Cowan MD</p><p>Principal Investigator: Angela Cheung MD, Margaret Herridge MD</p><p class="muted">The Ottawa Hospital, University Health Network</p></div><div class="row-date">May 2023</div></li><li class="row"><div class="row-main"><h3>CIRN/PHAC Sponsor Initiated Community Acquired Pneumonia Surveillance Study</h3><p>Principal Investigator: Dr. Anne McCarthy</p><p class="muted">Ottawa Hospital Research Institute</p></div><div class="row-date">Nov 2022 – May 2023</div></li><li class="row"><div class="row-main"><h3>CIRN/PHAC Sponsor Initiated FLU, COVID-19, and IPD Surveillance Study</h3><p>Principal Investigator: Dr. Anne McCarthy</p><p class="muted">Ottawa Hospital Research Institute</p></div><div class="row-date">Jul 2022 – Mar 2023</div></li><li class="row"><div class="row-main"><h3>Comparing Surgical Approaches in Thymectomy: Subxiphoid, Lateral Intercostal VATS, Open Median Sternotomy/Thoracotomy</h3><p>Principal Investigator: Dr. Donna Maziak</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Feb 2022 – Dec 2022</div></li><li class="row"><div class="row-main"><h3>Mesocolon indocyanine green injection to visualize the thoracic duct during esophagectomy: A Retrospective Cohort Study</h3><p>Principal Investigator: Dr. Donna Maziak, Dr. Aziza Al Rawahi</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Feb 2022 – Dec 2022</div></li><li class="row"><div class="row-main"><h3>The Effects of Uniportal VATS on Postoperative Outcomes and Quality of Life. Principal Investigators: Dr. Sebastien Gilbert, Dr. Yaseen Al Lawati</h3><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Jan 2022 – Dec 2022</div></li><li class="row"><div class="row-main"><h3>Effectiveness of 18F-FDG-PET/CT in the Diagnosis of Non-Small Cell Lung Cancer (NSCLC): A Systematic Review and Meta-Analysis.</h3><p>Principal Investigator: Dr. Donna Maziak, Dr. Francois Khazoom</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Oct 2021 – May 2023</div></li><li class="row"><div class="row-main"><h3>2022 Canadian National Graduate Study Finance Survey: Illuminating the Challenging Landscape of Graduate Student Finances in Canada</h3><p class="muted">University of Ottawa</p></div><div class="row-date">Sep 2021 – Apr 2023</div></li><li class="row"><div class="row-main"><h3>Updating the Practice of Thoracic Surgery in Canada: A Survey of the Canadian Association of Thoracic Surgeons</h3><p>Principal Investigators: Dr. Donna Maziak, Dr. Christian Finley, Dr. Frances Wright, Dr. Gail Darling</p><p class="muted">Ottawa Hospital, University of Ottawa, McMaster University, University of Toronto</p></div><div class="row-date">Jun 2021 – Sep 2022</div></li><li class="row"><div class="row-main"><h3>Association with surgical technique and recurrence after laparoscopic repair of paraesophageal hernia: a single center experience</h3><p>Principal Investigators: Dr. Andrew Seely, Dr. Aziza Al Rawahi</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Sep 2020 – Sep 2023</div></li><li class="row"><div class="row-main"><h3>Division-wide implementation of an Enhanced Recovery After Thoracic Surgery (ERATS) program — longitudinal impact on postoperative outcomes, processes of care, patient satisfaction and quality of life.</h3><p>Principal Investigators: Dr. Andrew Seely, Dr. Yaseen Al Lawati</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Sep 2020 – Apr 2021</div></li><li class="row"><div class="row-main"><h3>Quality Assurance on the Use of Sequential Compression Devices in Patients Following Enhanced Recovery After Thoracic surgery.</h3><p>Supervisor: Dr. Donna Maziak, Dr. Patrick Villeneuve</p><p class="muted">The Ottawa Hospital, University of Ottawa</p></div><div class="row-date">Jun 2019 – Jun 2021</div></li></ol></div></main>
+<footer class="foot"><div class="wrap">© 2026 Sami Aftab Abdul · Last updated October 2026</div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script>(function () {
+  var root = document.documentElement;
+  var $ = function (id) { return document.getElementById(id); };
+  var toast = $('toast'), timer;
+  function say(msg) {
+    toast.textContent = msg; toast.hidden = false;
+    clearTimeout(timer); timer = setTimeout(function () { toast.hidden = true; }, 1800);
+  }
+
+  // theme toggle (remembered across pages)
+  $('theme-btn').addEventListener('click', function () {
+    var cur = root.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    var next = cur === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+
+  // optional photo: hide the img if photo.jpg is missing so the initials show
+  var img = $('photo');
+  if (img) {
+    if (img.complete && img.naturalWidth === 0) img.hidden = true;
+    img.addEventListener('error', function () { img.hidden = true; });
+  }
+
+  // citation copy
+  document.querySelectorAll('.cite').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var text = b.getAttribute('data-cite');
+      try { navigator.clipboard.writeText(text).then(function () { say('Citation copied'); }, function () { say('Copy is not available here'); }); }
+      catch (e) { say('Copy is not available here'); }
+    });
+  });
+
+  // publications page
+  var list = $('pub-list');
+  if (list) {
+    var pubs = Array.prototype.slice.call(list.querySelectorAll('.pub'));
+    var q = $('pub-search'), type = $('pub-type'), first = $('pub-first'), empty = $('pub-empty');
+    var apply = function () {
+      var s = q.value.trim().toLowerCase(), t = type.value, f = first.checked, n = 0;
+      pubs.forEach(function (li) {
+        var ok = (t === 'all' || li.dataset.type === t) && (!f || li.dataset.first === '1') && (!s || li.dataset.search.indexOf(s) !== -1);
+        li.hidden = !ok; if (ok) n++;
+      });
+      empty.hidden = n !== 0;
+    };
+    q.addEventListener('input', apply); type.addEventListener('change', apply); first.addEventListener('change', apply);
+  }
+
+  // talks page
+  var tt = $('talk-type');
+  if (tt) {
+    var talks = Array.prototype.slice.call(document.querySelectorAll('#talk-list .talk'));
+    tt.addEventListener('change', function () {
+      talks.forEach(function (li) { li.hidden = !(tt.value === 'all' || li.dataset.type === tt.value); });
+    });
+  }
+})();
+</script>
+</body>
+</html>
