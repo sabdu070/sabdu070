@@ -243,6 +243,8 @@ svg { display: block; }
   .page-head .wrap { padding-block: 2.25rem 1.5rem; }
   .page-body { padding-block: 1.75rem 3rem; }
 }
+
+[hidden] { display: none !important; }
 </style>
 </head>
 <body>
@@ -268,7 +270,10 @@ svg { display: block; }
     <div class="cols">
       <div><h3 class="h-sm">Interests</h3>
         <ul class="interests"><li>Interrupted time series &amp; quasi-experimental designs</li><li>Drug policy evaluation</li>
-        <li>Evidence synthesis (network &amp; IPD meta-analysis)</li><li>Cluster randomized trials</li><li>Clinical prediction models</li></ul></div>
+        <li>Evidence synthesis (network meta-analysis, IPD meta-analysis, diagnostic test accuracy reviews)</li>
+        <li>Innovative trial designs (pragmatic, adaptive, multi-arm multi-stage, platform)</li>
+        <li>Clinical prediction models</li>
+        <li>Observational studies &amp; causal inference (propensity scores, instrumental variables, difference-in-differences, DAGs)</li></ul></div>
       <div><h3 class="h-sm">Education</h3><ul class="edu"><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 8.5l11 5.5 9-4.5V16h2V8.5L12 3zM5 12.2V16c0 1.66 3.13 3.5 7 3.5s7-1.84 7-3.5v-3.8l-7 3.5-7-3.5z"/></svg></span><div><p class="edu-deg">MSc in Epidemiology, 2026</p><p class="edu-inst">University of Ottawa</p></div></li><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 8.5l11 5.5 9-4.5V16h2V8.5L12 3zM5 12.2V16c0 1.66 3.13 3.5 7 3.5s7-1.84 7-3.5v-3.8l-7 3.5-7-3.5z"/></svg></span><div><p class="edu-deg">GDip in Health: Science, Technology and Policy, 2023</p><p class="edu-inst">Carleton University</p></div></li><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 8.5l11 5.5 9-4.5V16h2V8.5L12 3zM5 12.2V16c0 1.66 3.13 3.5 7 3.5s7-1.84 7-3.5v-3.8l-7 3.5-7-3.5z"/></svg></span><div><p class="edu-deg">BSc (Hons) in Biochemistry, 2022</p><p class="edu-inst">University of Ottawa</p></div></li><li><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 8.5l11 5.5 9-4.5V16h2V8.5L12 3zM5 12.2V16c0 1.66 3.13 3.5 7 3.5s7-1.84 7-3.5v-3.8l-7 3.5-7-3.5z"/></svg></span><div><p class="edu-deg">BSc (Hons) in Biomedical Sciences, 2021</p><p class="edu-inst">University of Ottawa</p></div></li></ul></div>
     </div>
   </div>
@@ -324,12 +329,33 @@ svg { display: block; }
     q.addEventListener('input', apply); type.addEventListener('change', apply); first.addEventListener('change', apply);
   }
 
-  // talks page
+  // talks page: search + type
   var tt = $('talk-type');
   if (tt) {
     var talks = Array.prototype.slice.call(document.querySelectorAll('#talk-list .talk'));
-    tt.addEventListener('change', function () {
-      talks.forEach(function (li) { li.hidden = !(tt.value === 'all' || li.dataset.type === tt.value); });
+    var tq = $('talk-search'), tEmpty = $('talk-empty');
+    talks.forEach(function (li) { li.dataset.search = li.textContent.toLowerCase(); });
+    var applyTalks = function () {
+      var s = tq.value.trim().toLowerCase(), t = tt.value, n = 0;
+      talks.forEach(function (li) {
+        var ok = (t === 'all' || li.dataset.type === t) && (!s || li.dataset.search.indexOf(s) !== -1);
+        li.hidden = !ok; if (ok) n++;
+      });
+      tEmpty.hidden = n !== 0;
+    };
+    tt.addEventListener('change', applyTalks); tq.addEventListener('input', applyTalks);
+  }
+
+  // projects page: search
+  var pq = $('proj-search');
+  if (pq) {
+    var projs = Array.prototype.slice.call(document.querySelectorAll('#proj-list .row'));
+    var pEmpty = $('proj-empty');
+    projs.forEach(function (li) { li.dataset.search = li.textContent.toLowerCase(); });
+    pq.addEventListener('input', function () {
+      var s = pq.value.trim().toLowerCase(), n = 0;
+      projs.forEach(function (li) { var ok = !s || li.dataset.search.indexOf(s) !== -1; li.hidden = !ok; if (ok) n++; });
+      pEmpty.hidden = n !== 0;
     });
   }
 })();

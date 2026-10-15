@@ -243,6 +243,8 @@ svg { display: block; }
   .page-head .wrap { padding-block: 2.25rem 1.5rem; }
   .page-body { padding-block: 1.75rem 3rem; }
 }
+
+[hidden] { display: none !important; }
 </style>
 </head>
 <body>
@@ -321,12 +323,33 @@ svg { display: block; }
     q.addEventListener('input', apply); type.addEventListener('change', apply); first.addEventListener('change', apply);
   }
 
-  // talks page
+  // talks page: search + type
   var tt = $('talk-type');
   if (tt) {
     var talks = Array.prototype.slice.call(document.querySelectorAll('#talk-list .talk'));
-    tt.addEventListener('change', function () {
-      talks.forEach(function (li) { li.hidden = !(tt.value === 'all' || li.dataset.type === tt.value); });
+    var tq = $('talk-search'), tEmpty = $('talk-empty');
+    talks.forEach(function (li) { li.dataset.search = li.textContent.toLowerCase(); });
+    var applyTalks = function () {
+      var s = tq.value.trim().toLowerCase(), t = tt.value, n = 0;
+      talks.forEach(function (li) {
+        var ok = (t === 'all' || li.dataset.type === t) && (!s || li.dataset.search.indexOf(s) !== -1);
+        li.hidden = !ok; if (ok) n++;
+      });
+      tEmpty.hidden = n !== 0;
+    };
+    tt.addEventListener('change', applyTalks); tq.addEventListener('input', applyTalks);
+  }
+
+  // projects page: search
+  var pq = $('proj-search');
+  if (pq) {
+    var projs = Array.prototype.slice.call(document.querySelectorAll('#proj-list .row'));
+    var pEmpty = $('proj-empty');
+    projs.forEach(function (li) { li.dataset.search = li.textContent.toLowerCase(); });
+    pq.addEventListener('input', function () {
+      var s = pq.value.trim().toLowerCase(), n = 0;
+      projs.forEach(function (li) { var ok = !s || li.dataset.search.indexOf(s) !== -1; li.hidden = !ok; if (ok) n++; });
+      pEmpty.hidden = n !== 0;
     });
   }
 })();
